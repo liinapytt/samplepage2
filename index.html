@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Proovitöö BEM-iga</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+      <meta lang="en">
+      <link rel="stylesheet" href="css/general.css">
+      <link rel="stylesheet" href="css/layout.css">
+      <link rel="stylesheet" href="css/header.css">
+      <link rel="stylesheet" href="css/card.css">
+      <link rel="stylesheet" href="css/helpers.css">
+      <link rel="stylesheet" href="css/section.css">
+      <link rel="stylesheet" href="css/media.css">
+      <link rel="stylesheet" href="css/comment.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   </head>
+   <body>
+      <!--Header-->
+      <div class="nav-container">
+         <div class="nav-container__content">
+            <div class="wrapper">
+               <input class="nav__btn" id ="nav__btn" type="checkbox"/>
+               <label class="nav__icon" for="nav__btn"><i class="material-icons">menu</i></label>
+               <h2 class="nav__heading"><a href="#" class="logo">Menu</a></h2>
+               <ul class="list-unstyled list-inline nav-list">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                  <li><a href="#events">Events</a></li>
+                  <li><a href="#gallery">Gallery</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="wrapper">
+         <!--Layout-->
+         <div class="layout">
+            <!--Section Blog-->
+            <div class="layout__main">
+               <!--Card component-->
+               <article class="card">
+                  <div class="card__cover">
+                     <img class="card__img" src="img/cover_2048.jpg" alt="Blogging desk">
+                  </div>
+                  <div class="card__block">
+                     <h2>Practical Functional Programming</h2>
+                     <p class="card__subheading muted">Published by <a href="#">Steven Heidel </a>on 29 Apr 2017</p>
+                     <p class="card__text">The following is reformatted from a presentation I gave at LinkedIn last year. The presentation attempted to explain functional programming without using concepts like 'monads' or 'immutability' or 'side effects'. Instead it focuses on how thinking about composition can make you a better programmer, regardless of what language you use.</p>
+                     <ul class="list-unstyled list-inline list-links muted">
+                        <li><a href="#">#hashtags</a></li>
+                        <li><a href="#">#events</a></li>
+                        <li><a href="#">#programming</a></li>
+                     </ul>
+                  </div>
+                  <div class="card__block">
+                     <ul class="list-unstyled list-inline list-separated list-socialmedia muted">
+                        <li><a href="#">1 like</a></li>
+                        <li><a href="#">2 comments</a></li>
+                        <li><a href="#">3 views</a></li>
+                     </ul>
+                  </div>
+               </article>
+               <article class="card">
+                  <div class="card__cover">
+                     <img class="card__img" src="img/cover_2048.jpg" alt="Blogging desk">
+                  </div>
+                  <div class="card__block">
+                     <h2>Practical Functional Programming</h2>
+                     <p class="card__subheading muted">Published by <a href="#">Steven Heidel </a>on 29 Apr 2017</p>
+                     <p class="card__text">The following is reformatted from a presentation I gave at LinkedIn last year. The presentation attempted to explain functional programming without using concepts like 'monads' or 'immutability' or 'side effects'. Instead it focuses on how thinking about composition can make you a better programmer, regardless of what language you use.</p>
+                     <ul class="list-unstyled list-inline list-links muted">
+                        <li><a href="#">#hashtags</a></li>
+                        <li><a href="#">#events</a></li>
+                        <li><a href="#">#programming</a></li>
+                     </ul>
+                  </div>
+                  <div class="card__block">
+                     <ul class="list-unstyled list-inline list-separated list-socialmedia muted">
+                        <li><a href="#">1 like</a></li>
+                        <li><a href="#">2 comments</a></li>
+                        <li><a href="#">3 views</a></li>
+                     </ul>
+                  </div>
+               </article>
+            </div>
+            <!--Aside-->
+            <div class="layout__aside">
+               <!--Section Events-->
+               <section class="section">
+                  <div class="section__header">
+                     <h2 class="section__heading">Events</h2>
+                  </div>
+                  <div class="section__header">
+                  </div>
+                  <div class="section__block">
+                     <!--Media component-->
+                     <section class="media media--conference">
+                        <p class="media__date">
+                           <span>11</span> <span>Dets</span>
+                        </p>
+                        <div class="media__block">
+                           <h3>UX Tartu</h3>
+                           <ul class="list-unstyled list-inline list-separated muted">
+                              <li>SPARK</li>
+                              <li>Tartu</li>
+                              <li class="text-danger">Tomorrow</li>
+                           </ul>
+                        </div>
+                     </section>
+                     <!--Media component-->
+                     <section class="media media--party">
+                        <p class="media__date">
+                           <span>20</span> <span>Dets</span>
+                        </p>
+                        <div class="media__block">
+                           <h3>Christmas Party</h3>
+                           <ul class="list-unstyled list-inline list-separated muted">
+                              <li>SPARK</li>
+                              <li>Tartu</li>
+                              <li class="text-success">Going</li>
+                           </ul>
+                        </div>
+                     </section>
+                     <!--Media component-->
+                     <section class="media media--conference">
+                        <p class="media__date">
+                           <span>9</span><br> <span>Dets</span>
+                        </p>
+                        <div class="media__block">
+                           <h3>Refresh 2018</h3>
+                           <ul class="list-unstyled list-inline list-separated muted">
+                              <li>SPARK</li>
+                              <li>Tartu</li>
+                           </ul>
+                        </div>
+                     </section>
+                  </div>
+               </section>
+               <!--Section Birthdays-->
+               <section class="section">
+                  <div class="section__header">
+                     <h2 class="section__heading">Birthdays</h2>
+                  </div>
+                  <div class="section__block">
+                     <!--Media component-->
+                     <section class="media media--person">
+                        <p class="media__image">
+                           <span class="thumbnail"><img src="img/52.jpg" alt="Peter Heidel"></span>
+                        </p>
+                        <div class="media__block">
+                           <h3>Steven Heidel</h3>
+                           <ul class="list-unstyled list-inline list-separated muted muted">
+                              <li>12 November</li>
+                              <li class="text-danger">Tomorrow</li>
+                           </ul>
+                        </div>
+                     </section>
+                     <!--Media component-->
+                     <section class="media media--person">
+                        <p class="media__image">
+                           <span class="thumbnail"><img src="img/87.jpg" alt="Eva Salomon"></span>
+                        </p>
+                        <div class="media__block">
+                           <h3>Eva Salomon</h3>
+                           <ul class="list-unstyled list-inline list-separated muted">
+                              <li>18 November</li>
+                           </ul>
+                        </div>
+                     </section>
+                     <!--Media component-->
+                     <section class="media media--person">
+                        <p class="media__image">
+                           <span class="thumbnail"><img src="img/32.jpg" alt="Sarah Goldstein"></span>
+                        </p>
+                        <div class="media__block">
+                           <h3>Sarah Goldstein</h3>
+                           <ul class="list-unstyled list-inline list-separated muted">
+                              <li>29 November</li>
+                           </ul>
+                        </div>
+                     </section>
+                  </div>
+               </section>
+               <!--Section Newcomers-->
+               <section class="section">
+                  <div class="section__header">
+                     <h2 class="section__heading">Newcomers</h2>
+                  </div>
+                  <div class="section__block">
+                     <!--Media component-->
+                     <section class="media media--person">
+                        <p class="media__image">
+                           <span class="thumbnail"><img src="img/52.jpg" alt="Peter Heidel"></span>
+                        </p>
+                        <div class="media__block">
+                           <h3>Steven Heidel</h3>
+                           <ul class="list-unstyled list-inline list-separated muted">
+                              <li>12 November</li>
+                              <li class="text-danger">Tomorrow</li>
+                           </ul>
+                        </div>
+                     </section>
+                     <!--Media component-->
+                     <section class="media media--person">
+                        <p class="media__image">
+                           <span class="thumbnail"><img src="img/87.jpg" alt="Eva Salomon"></span>
+                        </p>
+                        <div class="media__block">
+                           <h3>Eva Salomon</h3>
+                           <ul class="list-unstyled list-inline list-separated muted">
+                              <li>18 November</li>
+                           </ul>
+                        </div>
+                     </section>
+                     <!--Media component-->
+                     <section class="media media--person">
+                        <p class="media__image">
+                           <span class="thumbnail"><img src="img/32.jpg" alt="Sarah Goldstein"></span>
+                        </p>
+                        <div class="media__block">
+                           <h3>Sarah Goldstein</h3>
+                           <ul class="list-unstyled list-inline list-separated muted">
+                              <li>29 November</li>
+                           </ul>
+                        </div>
+                     </section>
+                  </div>
+               </section>
+               <!-- Section Latest comments -->
+               <section class="section">
+                  <div class="section__header">
+                     <h2 class="section__heading">Latest comments</h2>
+                  </div>
+                  <div class="section__block">
+                     <!-- Comment component -->
+                     <section class="media media--comment">
+                        <div class="media__block">
+                           <h3>Practical Functional Programming</h3>
+                           <div class="comment">
+                              <p class="small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque sequi consectetur ...</p>
+                              <p class="xtrasmall muted">3 November John Doe</p>
+                           </div>
+                        </div>
+                     </section>
+                     <!-- Comment component -->
+                     <section class="media media--comment">
+                        <div class="media__block">
+                           <h3>Practical Functional Programming</h3>
+                           <div class="comment">
+                              <p class="small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque sequi consectetur ...</p>
+                              <p class="xtrasmall muted">3 November John Doe</p>
+                           </div>
+                        </div>
+                     </section>
+                     <!-- Comment component -->
+                     <section class="media media--comment">
+                        <div class="media__block">
+                           <h3>Practical Functional Programming</h3>
+                           <div class="comment">
+                              <p class="small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque sequi consectetur ...</p>
+                              <p class="xtrasmall muted">3 November John Doe</p>
+                           </div>
+                        </div>
+                     </section>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

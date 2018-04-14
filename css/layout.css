@@ -1,0 +1,36 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.layout__main {
+    flex: 1 100%;
+    margin: 0 1rem;
+} 
+
+.layout__aside {
+    flex: 1 100%;
+    margin: 0 1rem;
+}
+
+/* Medium and large screen */
+@media all and (min-width: 768px) {
+
+    .layout {
+        display: flex;
+        flex-direction: row; 
+        max-width: 1000px;
+    
+    }
+
+    .layout__main { 
+        flex: 2 0rem; 
+        flex-direction: column;
+        }
+        
+    .layout__aside { 
+        flex: 1 0rem; 
+        }
+     
+    }
