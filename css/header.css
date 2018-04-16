@@ -29,10 +29,13 @@
     vertical-align: middle;
 }
 
+.nav-list {
+    margin: 0;
+}
+
 .nav-list li a {
     color: #fff;
-    font-size: 1rem;
-    font-family: "Arial", sans-serif;
+    margin: 0;
     padding: 1rem;
     visibility: collapse;
     line-height: 3rem;
@@ -45,8 +48,6 @@
 }
 
 .nav__heading {
-    font-size: 1rem;
-    font-family: "Arial", sans-serif;
     margin: 0;
     display: inline-block;
 }
@@ -84,7 +85,7 @@
         display: none;
     }
 
-    .nav__heading {
+    h2.nav__heading {
         display: inline;
     }
 

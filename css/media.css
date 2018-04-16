@@ -14,18 +14,27 @@
 }
 
 .media__date {
-    font-size: 0.75rem;
     font-weight: 700;
     display: inline-block;
     border-radius: 50%;
     border: 3px solid #a1f1da;
     width: 3rem;
     height: 3rem;
-    margin: 0 0.5rem 0 0; 
+    margin: 0;
     line-height: 1rem;
-    padding-top: 0.4rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.media.media--conference .media__block {
+    padding-left: 0.5rem;
+}
+.media.media--party .media__block {
+    padding-left: 0.5rem;
+}
+
 .media.media--party .media__date {
     border: 3px solid #ffc9c9;
 }
