@@ -1,0 +1,109 @@
+.nav-container {
+    background-color: $navbar-color;
+    color: $secondary-color;
+    height: 3rem; 
+    z-index: 3;
+    position: sticky;
+    top: 0;
+
+    &__content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 3rem;
+    display: inline-block;
+    }
+
+    &.list-inline li {
+        display: block;
+    }
+}
+
+.nav {
+    &__btn {
+    opacity: 0;
+    
+        &:checked ~ .nav-list {
+            background: $list-item-color;
+        }
+        
+        &:checked ~ .nav-list li a {
+            visibility: visible;
+            max-height: 15rem;
+            display: block;
+            line-height: 1rem;
+
+            &:hover {
+                background: $hover-color;
+            }
+        }
+    }
+
+    &__icon {
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 auto; 
+        position: relative;
+        user-select: none;
+        vertical-align: middle;
+    }
+
+    &__heading {
+        margin: 0;
+        display: inline-block;
+    }
+}
+
+.nav-list {
+    margin: 0;
+
+    & li a {
+        color: $secondary-color;
+        margin: 0;
+        padding: 1rem;
+        visibility: collapse;
+        line-height: 3rem;
+    }
+}
+
+.logo {
+    color: $secondary-color;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 3rem;
+}
+
+//Medium and large screen
+
+@media (min-width: $breakpoint-tablet) {
+    
+    .nav {
+        &__btn {
+        display:none;
+        }
+
+        &__icon {
+        display: none;
+        }
+
+        &__heading {
+        display: inline;
+        }
+    }
+    
+    .logo {
+        display: none;
+    }
+
+    .nav-container .list-inline li {
+        display: inline-block;
+    }
+    .nav-list li a {
+        visibility: visible;
+
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+  } 

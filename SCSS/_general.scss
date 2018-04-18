@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $theme-color;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: $default-font;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: $headline-size;
+  margin: $default-margin;
+}
+
+h3 {
+  margin: $default-margin;
+  line-height: $line-height;
+  font: {
+    weight: 400;
+    size:  $font-size;
+    family: $secondary-font;
+  }    
+}
+
+p, .p {
+  margin: $default-margin;
+  line-height: $line-height;
+  font: {
+    size: $font-size;
+    family: $secondary-font;
+  }
+}
+
+ul {
+  font: {
+    size: $small-text-size;
+    family: $secondary-font;
+  }
+  margin: $default-margin;
+}
+
+li {
+  font: {
+    size: $small-text-size;
+    family: $secondary-font;
+  }
+}

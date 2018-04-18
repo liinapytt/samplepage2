@@ -1,0 +1,53 @@
+.media {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+
+    &__block {
+        position: relative;     
+        overflow: hidden;  
+        display: inline-block;  
+    }
+
+    &__block * {
+        margin: 0;
+    }
+
+    &__date {
+        font-weight: 700;
+        display: inline-block;
+        border-radius: 50%;
+        border: 3px solid #a1f1da;
+        width: 3rem;
+        height: 3rem;
+        margin: 0;
+        line-height: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &--conference .media__block {
+        padding-left: $spacer-left;
+    }
+    &--party .media__block {
+        padding-left: $spacer-left;
+    }
+
+    &--party .media__date {
+        border: 3px solid #ffc9c9;
+    }
+
+   &__image {
+        margin:0;
+        padding-right: 0.5rem;
+    }
+}
+
+.thumbnail img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: inline-block;
+}

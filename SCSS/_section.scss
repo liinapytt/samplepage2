@@ -1,0 +1,25 @@
+.section {
+    margin-top: 1rem;
+
+    &__block {
+        position: relative;
+        overflow: hidden;  
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 1rem;
+            right: 1rem;
+            top: 0rem;
+            height: 1px;
+            background: $ternary-color;
+        }
+    }
+
+    &__heading {
+        font-size: 1.25rem; /*20px*/
+        text-transform: uppercase;
+    }
+}
+
+    
